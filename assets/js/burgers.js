@@ -18,7 +18,7 @@ $(function() {
         function() {
           console.log("changed sleep to", newSleep);
           // Reload the page to get the updated list
-          loburgerion.reload();
+          location.reload();
         }
       );
     });
@@ -29,7 +29,7 @@ $(function() {
   
       var newburger = {
         name: $("#ca").val().trim(),
-        sleepy: $("[name=sleepy]:checked").val().trim()
+        
       };
   
       // Send the POST request.
@@ -40,7 +40,7 @@ $(function() {
         function() {
           console.log("created new burger");
           // Reload the page to get the updated list
-          loburgerion.reload();
+          location.reload();
         }
       );
     });
